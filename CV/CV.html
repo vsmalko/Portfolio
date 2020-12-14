@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Veronika Smalko</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
+    <style>
+
+      body {
+        background: #f5f5f5;
+        font-size: 14px;
+        padding: 30px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+      }
+      a {
+        color: #2d7788;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+      }
+      a.job-title {
+        text-decoration: none;
+      }
+      p {
+        line-height: 1.5;
+      }
+      ul>li.card-text {
+        margin-bottom:10px;
+      }
+      .wrapper {
+        background: #42a8c0;
+        /* max-width: 960px; */
+        margin: 0 auto;
+        position: relative;
+        -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .sidebar-wrapper {
+        background: #5bbc62;
+        position: absolute;
+        left: 0;
+        width: 280px;
+        height: 100%;
+        min-height: 1550px;
+        color: #fff;
+      }
+      .sidebar-wrapper a {
+        color: #fff;
+      }
+      .sidebar-wrapper .profile-container {
+        padding: 30px;
+        margin-bottom: 15px;
+        background: rgba(0, 0, 0, 0.1);
+        text-align: center;
+        color: #fff;
+      }
+      .sidebar-wrapper .name {
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      .sidebar-wrapper .tagline {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .profile {
+        margin-bottom: 15px;
+      }
+      .sidebar-wrapper .contact-list .fa {
+        margin-right: 5px;
+        font-size: 18px;
+        vertical-align: middle;
+      }
+      .sidebar-wrapper .contact-list li {
+        margin-bottom: 15px;
+      }
+      .sidebar-wrapper .contact-list li:last-child {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .contact-list .email .fa {
+        font-size: 14px;
+      }
+      .sidebar-wrapper .container-block {
+        padding-top: 15px;
+        padding-left:30px;
+        padding-right:30px;
+      }
+      .sidebar-wrapper .container-block-title {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+      .sidebar-wrapper .degree {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .sidebar-wrapper .education-container .item {
+        margin-bottom: 15px;
+      }
+      .sidebar-wrapper .education-container .item:last-child {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .skills-container .item {
+        margin-bottom: 15px;
+      }
+      .sidebar-wrapper .skills-container .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .sidebar-wrapper .languages-list {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .languages-list li {
+        margin-bottom: 10px;
+       
+      }
+      .languages-container {
+        padding: 30px;
+      }
+      .sidebar-wrapper .languages-list li:last-child {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .interests-list {
+        margin-bottom: 0;
+        list-style: disc;
+      }
+      .sidebar-wrapper .interests-list li {
+        margin-bottom: 10px;
+        padding-left: 0;
+        margin-left:30px;
+      }
+      .sidebar-wrapper .interests-list li:last-child {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .skills-list {
+        margin-bottom: 0;
+      }
+      .sidebar-wrapper .skills-list li {
+        margin-bottom: 10px;
+      }
+      .sidebar-wrapper .skills-list li:last-child {
+        margin-bottom: 0;
+      }
+      .main-wrapper {
+        background: #fff;
+        padding: 60px;
+        padding-left: 350px;
+      }
+      .academy {
+        margin-bottom: 5px;
+      }
+      .main-wrapper .section-title {
+        font-size: 20px;
+        font-weight: 500;
+        color: #53A658;
+        position: relative;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .main-wrapper .section-title .fa {
+        width: 30px;
+        height: 30px;
+        margin-right: 8px;
+        display: inline-block;
+        color: #fff;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        background:  #53A658;
+        text-align: center;
+        padding-top: 8px;
+        font-size: 16px;
+        position: relative;
+        top: -2px;
+      }
+      .main-wrapper .section {
+        margin-bottom: 60px;
+      }
+      .main-wrapper .experiences-section .item {
+        margin-bottom: 30px;
+      }
+      .main-wrapper .upper-row {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 2px;
+      }
+      .main-wrapper .job-title {
+        color: #3f4650;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+      .main-wrapper .time {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #97aac3;
+      }
+      .main-wrapper .company {
+        margin-bottom: 10px;
+        color: #97aac3;
+      }
+      .main-wrapper .project-title {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 5px;
+      }
+      .main-wrapper .projects-section .intro {
+        margin-bottom: 30px;
+      }
+      .main-wrapper .projects-section .item {
+        margin-bottom: 15px;
+      }
+      .skillset .item {
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+      .skillset .level-title {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 12px;
+      }
+      .skillset .level-bar {
+        height: 12px;
+        background: #f5f5f5;
+      }
+      .skillset .level-bar-inner {
+        height: 12px;
+        background: #7bc2d3;
+      }
+      .footer {
+        padding: 30px;
+        padding-top: 60px;
+      }
+      .footer .copyright {
+        line-height: 1.6;
+        color: #545e6c;
+        font-size: 13px;
+      }
+      .footer .fa-heart {
+        color: #fb866a;
+      }
+        .card-one{
+          background-color: #64BD9C;
+        }
+        .card-two{
+          background-color: #B8B8B8;
+        }
+        .card-three {
+          background-color: #5BBD61;
+        } 
+        .card-four {
+          background-color:#E1D037;
+        }
+     
+      .hobbies {
+        margin-top: 40px;
+      }
+      .pic {
+        height: 80px;
+        width: 80px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <div class="wrapper d-inline-block">
+      <div class="sidebar-wrapper">
+        <div class="profile-container">
+          <img class="profile pic rounded-circle" src="resume2.jpg" alt="" />
+          <h1 class="name">Veronika Smalko</h1>
+          <h3 class="tagline">Junior Front-end Developer</h3>
+        </div>
+
+        <div class="contact-container container-block">
+          <ul class="list-unstyled contact-list">
+            <li class="email"><i class="fa fa-envelope"></i> v.smalko16@gmail.com</li>
+            <li class="phone"><i class="fa fa-phone"></i> 380 68 599 00 09</li>
+            <li class="github">
+              <i class="fa fa-github"></i>
+              <a href="https://github.com/vsmalko/Portfolio"> github.com/vsmalko/Portfolio</a>
+            </li>
+            <li class="facebook">
+              <i class="fa fa-facebook"></i> <a href="https://www.facebook.com/veronika.smalko">facebook.com/veronika.smalko</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skills-container container-block">
+          <h2 class="container-block-title">Key Skills</h2>
+          <div class="item">
+            <ul>
+              <li>HTML/CSS coding</li>
+              <li>JavaScript development</li>
+              <li>Work with CMS</li>
+              <li>English Proficiency (C2)</li>
+              <li>Organizing work</li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="education-container container-block">
+            <h2 class="container-block-title">Education</h2>
+            <div class="item">
+              <h4 class="degree">High School</h4>
+              <p class="meta">High School 32, Kyiv, Ukraine</p>
+              <p class="time">2007–2018</p>
+            </div>
+
+            <div class="item">
+              <h4 class="degree">Undergraduate degree in Publishing and Media Editing</h4>
+              <p class="meta">Institute of Journalism, Taras Shevchenko National University of Kyiv, Kyiv, Ukraine</p>
+              <p class="time">2018–2022</p>
+            </div>
+          </div>
+
+          <div class="languages-container container-block">
+            <h2 class="container-block-title">Languages</h2>
+            <ul class="list-unstyled interests-list">
+              <li>English (Proficient C2)</li>
+              <li>Ukrainian (Native)</li>
+              <li>Russian (Native)</li>
+              <li>French (A1)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="interests-container container-block">
+          <h2 class="container-block-title">Interests</h2>
+          <ul class="list-unstyled interests-list">
+            <li>Climbing</li>
+            <li>Snowboarding</li>
+            <li>Cooking</li>
+          </ul>
+        </div>
+       -->
+
+
+      <div class="main-wrapper">
+        <section class="section summary-section">
+          <h2 class="section-title"><i class="fa fa-user"></i>Front-End Development Courses</h2>
+          <div class="summary">
+            <p class="academy">IT Step Academy</p>
+            <p>2020-2021</p>
+            <p>Program includes: HTML/CSS, JavaScript development, using CSS and
+              JS frameworks and libraries, testing web-pages, JSON notation, etc.</p>
+            </p>
+          </div>
+        </section>
+
+        <section class="section experiences-section">
+          <h2 class="section-title"><i class="fa fa-briefcase"></i>Work experience</h2>
+
+          <div class="item">
+                <h3 class="job-title">July, 2019 – Shop Assistant in Bukva ("Буква”) bookstore</h3>
+          </div>
+
+          <div class="item">
+                <h3 class="job-title">Since January 2020 – Freelance</h3>
+            <div class="details">
+              <p>
+                Script editing in Ukrainian; English to Russian and Ukrainian article
+and packaging translation; English and Russian article rewriting;
+presentation and website editing, including graphics; DTP for
+leaflets.
+              </p>
+            </div>
+          </div>
+
+          <div class="item">
+            <h3 class="job-title">February – September 2020 – English language Editor at Devoop</h3>
+        <div class="details">
+          <p>
+            Editing academic writing. I worked with texts formatted in such styles
+as APA, MLA, Harvard, Chicago/Turabian, ASA, AMA, IPEE, Vancouver,
+and others. I also communicated with the writers using the CRM
+system.
+          </p>
+        </div>
+      </div>
+        
+  <div class="row row-cols-2 g-4">
+    <div class="col-5">
+  <div class="card text-white card-one mb-1 h-100" style="max-width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Job-related Skills</h5>
+        <ul>
+          <li class="card-text">HTML5 and CSS3 layout</li>
+            <li class="card-text">JavaScript coding according to Ecmascript6 standard</li>
+            <li class="card-text">Version control in Git</li>
+            <li class="card-text">W3C Markup knowledge</li>
+            <li class="card-text">VSCode excellence</li>
+            <li class="card-text">Using OOP concepts</li>
+            <li class="card-text">Work with CSS frameworks: Bootstrap, Materialize</li>
+            <li class="card-text">Using Wordpress templates and plugins (Yoast SEO, MonsterInsights, WooCommerce), Elementor builder.</li>
+            <li class="card-text">Acquaintance with Tilda, Wix, and Webflow builders</li>
+            <li class="card-text">Web-design and prototyping in Figma</li>
+        </ul>
+    </div>
+  </div>
+  </div>
+
+  <div class="col-5">
+  <div class="card text-white card-two mb-1 h-100" style="max-width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title">Communication Skills</h5>
+        <ul>
+          <li class="card-text">I was a team lead of 2 university projects related to managing publishing websites. My duties included content-planning, editing group members' articles, and presenting work results to the audience.</li>
+            <li class="card-text">I'm an active listener, always open to work negotiation. I'm friendly, and politeness in every form of communication is very important to me.</li>
+              <li class="card-text">I am good at setting deadlines for the team and myself. I have a democratic approach to problem-solving and always look for mutually beneficial decisions.</li>
+                <li class="card-text">My volunteer experience at the largest national book fairs (April 2019 – Book Arsenal, Kyiv; September 2019 – BookForum, Lviv) has trained my networking skills as well.</li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col-5">
+  <div class="card text-white card-three mb-1 h-100" style="max-width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">Digital Skills</h5>
+        <ul>
+        <li class="card-text">Advanced: Microsoft Word, Adobe Acrobat, Figma, Premiere, Photoshop, Illustrator.</li>
+        <li class="card-text">Other software: Excel, InDesign, Audition, Spark AR.</li>
+        <li class="card-text">SEO optimization.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="col-5">
+  <div class="card text-white card-four mb-1 h-100" style="max-width: 20rem;">
+    <div class="card-body">
+      <h5 class="card-title">Organizational Skills</h5>
+        <ul>
+        <li class="card-text">I've gained good organizational skills due to exams and work. These include structuring and prioritizing tasks and meeting deadlines.</li>
+          <li class="card-text">I use planner and calendar for managing my tasks, time, and expenses on a daily basis.</li>
+            <li class="card-text">I understand the tasks quickly and can explain it to others clearly. I identify the strengths and weaknesses of the team members to collaborate effectively.</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+<section class="section hobbies">
+  <h2 class="section-title"><i class="fa fa-user"></i>Hobbies</h2>
+  <div class="summary">
+    <p> <i class="fas fa-book"></i> <a class="job-title">Reading.</a> I enjoy books of different styles, but mostly fiction and non-fiction. I prefer reading in the original language.
+    </p>
+    <p> <i class="fa fa-music"></i> <a class="job-title">Music.</a> I play electric guitar and edit audio tracks for videos on occasion. I don’t stick to one artist, genre, or mood and love to discover new music daily.
+    </p>
+    <p> <i class="tiny material-icons">directions_run</i><a class="job-title">Running.</a> I run since 2017. I participated in Wizz Air 10th Kyiv City Marathon in fall 2019. My personal record is 10 km, but the sky is the limit.
+    </p>
+    <p> <i class="fa fa-suitcase"></i> <a class="job-title">Traveling.</a> I always plan my trips, decide on the places I want to see, manage the budget and time. Book shops, museums, architectural and historical sights are constantly on my visiting list.
+    </p>
+  </div>
+</section>
+</div>
+  </body>
+</html>
