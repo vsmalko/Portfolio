@@ -4,58 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous"/>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
-    <style>
-      #logo {
-        height: 40px;
-        width: 40px;
-      }
-      * {
-        font-family: Helvetica, Arial, sans-serif;
-      }
-      #title {
-        margin-top: 70px;
-      }
-      .mll {
-        margin-left: 60px;
-      }
-      .mll2 {
-          padding-left: 70px;
-          background-color:rgb(243, 242, 242);
-          margin-top: 10px;
-      }
-      .pagefooter {
-          height: 100px;
-      }
-      .bgcolor {
-        background-color: #0A58CA;
-      }
-      .divider {
-          height: 40px;
-      }
-      .inputh {
-          margin-left: 10px;
-          margin-top: 5px;
-          font-size: 14px;
-      }
-    </style>
   </head>
   <body>
     <div class="border-bottom">
       <ul class="nav justify-content-center">
         <li>
-          <img id="logo" src="vvv.png" alt="" />
+          <img class="logo" src="vvv.png" alt="" />
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" aria-current="page" href="#"><small>World</small></a>
@@ -81,15 +47,15 @@
         <li class="nav-item">
           <a class="nav-link text-dark" href="#"><small>Business</small></a>
         </li>
-        <li><img id="logo" src="flutter-circleavatar-radius.png" /></li>
+        <li><img class="logo" src="flutter-circleavatar-radius.png" /></li>
         <li>
-            <input type="text" class="rounded inputh border-dark form-control form-control-sm" placeholder="Search">
+            <input type="text" class="rounded input-size border-dark form-control form-control-sm" placeholder="Search">
         </li>
       </ul>
     </div>
 
     <div class="container">
-      <h2 id="title"><strong>Lifestyle</strong></h2>
+      <h2 class="title"><strong>Lifestyle</strong></h2>
       <p class="text-secondary">The latest and best news selected by our editorial office especially for you.</p>
 
       <div class="row row-cols-3">
@@ -221,8 +187,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright mll2 py-3">© 2020 Blog</div>
+      <div class="mll2 py-3">© 2020 Blog</div>
     </footer>
-    
   </body>
 </html>
