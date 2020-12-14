@@ -1,0 +1,12 @@
+.grey {
+  background-color: gainsboro;
+}
+li {
+  list-style-type: none;
+}
+.lists {
+  margin: 20px;
+}
+b {
+  font-size: 24px;
+}
