@@ -1,0 +1,38 @@
+nav {
+  width: 100%;
+  text-align: center;
+}
+div .image {
+  width: 79%;
+  padding-top: 5px;
+}
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #37474f !important;
+}
+.img-responsive {
+  max-width: 50%;
+}
+
+.mll {
+  margin-left: 200px;
+}
+.pagefooter {
+  background-color: #37474f !important;
+}
+.readnext {
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+.search {
+  margin-left: 30px;
+}
+.sized {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: 0 auto;
+}
+.subhead {
+  margin-top: 30px;
+}
