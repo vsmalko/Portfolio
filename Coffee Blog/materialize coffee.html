@@ -4,80 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deciphering Different Types of Coffee with Milk</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        let elems = document.querySelectorAll(".carousel");
-        let instance = M.Carousel.init(elems, {
-          fullWidth: false,
-          indicators: true,
-          duration: 100,
-        });
-      });
-      document.addEventListener('DOMContentLoaded', function() {
-    let elemes = document.querySelectorAll('.dropdown-trigger');
-    let instances = M.Dropdown.init(elemes, {
-      coverTrigger: false,
-      hover: true,
-    });
-  });
-  let mybutton = document.getElementById("myBtn");
-window.onscroll = function() {scrollFunction()};
-function scrollFunction() {
-  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    myBtn.style.display = "block";
-  } else {
-    myBtn.style.display = "none";
-  }
-}
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-    </script>
-    
-    <style>
-      .img-responsive {
-        max-width: 50%;
-      }
-      .sized {
-        width: 50px;
-        height: 50px;
-        display: inline-block;
-        margin-left: 29%;
-        margin-right: auto;
-      }
-      .dropdown-content li > a, .dropdown-content li > span {
-    color: #37474f;
-}
-.page-footer {
-  background-color: #37474f;
-  padding-top:10px
-}
-#readnext{
-margin-bottom: 40px;
-margin-top: 30px;
-}
-h5 {
-  margin-top: 30px;
-}
-#search {
-  margin-left: 30px;
-}
-.mll {
-  margin-left: 200px;
-}
-    </style>
   </head>
   <body>
     <div class="navbar-fixed" aria-label=’primary’>
     <nav>
-      <div class="nav-wrapper blue-grey darken-1 stick">
-        <img href="#" class="sized" src="White Coffee.png" alt="" />
+      <div class="nav-wrapper blue-grey darken-1">
         <ul id="nav-mobile" class="left">
           <li>
             <a href="#"><i class="material-icons dropdown-trigger" data-target="dropdown1">menu</i></a>
@@ -86,11 +20,16 @@ h5 {
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s6">
-                    <input placeholder="Search" id="search" type="text" class="validate">
+                    <input placeholder="Search" id="search" type="text" class="validate search">
+                  </div>
+                  </div>
           </li>
         </ul>
+        <div class="image">
+        <img href="#" class="sized" src="White Coffee.png" alt="" />
       </div>
-    </nav>
+      </div>
+ 
     <ul id='dropdown1' class='dropdown-content'>
       <li><a href="#!" class="waves-effect waves-red">About</a></li>
       <li><a href="#!" class="waves-effect waves-red">Guides</a></li>
@@ -101,10 +40,11 @@ h5 {
       <li><a href="#!" class="waves-effect waves-red">Contact</a></li>
       <li><a href="#!" class="waves-effect waves-red">Privacy Policy</a></li>
     </ul>
+</nav>
   </div>
 
     <h3 class="center">Deciphering Different Types of Coffee with Milk</h3>
-    <h5 class="center">A Guide to Milked Coffee Drinks</h5>
+    <h5 class="center subhead">A Guide to Milked Coffee Drinks</h5>
     <p class="center grey-text">Written by Sarah Johnson on 09/28/20</p>
     <div class="carousel carousel-slider center">
       <a class="carousel-item" href="#one!"><img class="img-responsive" src="02CAPP3SUB-superJumbo.jpg" /></a>
@@ -153,15 +93,16 @@ h5 {
       <p>
         Unlike most steamed milk coffee drinks, it is "wet," so it has little or no foam and a smooth, velvety texture.
       </p>
-      <h6 id="readnext">Read Next: <a href="#">The 10 Best Espresso Machines of 2020</a></h6>
-      
+      <h6 class="readnext">Read Next: <a href="#">The 10 Best Espresso Machines of 2020</a></h6>
     </div>
+
     <div class="fixed-action-btn" onclick="topFunction()" id="myBtn">
       <a class="btn-floating btn-large blue-grey">
         <i class="large material-icons">arrow_upward</i>
       </a>
     </div>
-    <footer class="page-footer">
+
+    <footer class="page-footer pagefooter">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -180,10 +121,16 @@ h5 {
         </div>
       </div>
       <div class="footer-copyright">
-        <div class="container mll">
+        <div class="container">
         © 2020 Brewed Up
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="all.js"></script>
+
   </body>
 </html>
