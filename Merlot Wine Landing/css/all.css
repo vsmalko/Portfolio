@@ -1,22 +1,16 @@
+/* General */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap");
-
-* {
-  box-sizing: border-box;
-}
 
 html,
 body {
+  font: 14px/140% "Montserrat", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 0 0 20px 0;
   width: 100%;
   min-width: 320px;
   height: 100%;
   color: #525252;
-  padding-bottom: 20px;
-}
-
-body {
-  font: 14px/140% "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -85,18 +79,36 @@ strong {
   }
 }
 
+/* Helpers */
+.box {
+  margin: 0 20px;
+  box-shadow: 0px 2px 5px 0 rgba(67, 67, 67, 0.11);
+  background: #ffffff;
+}
+
+.box__spacer {
+  margin: 100px 0 0;
+}
+
+.box__spacer:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #d5dbe3;
+}
+
+/* Header */
 header {
   position: relative;
   height: 58px;
-  background-color: #ffffff;
-  border-bottom-style: solid;
-  border-width: 1px;
-  border-color: #434343;
+  background: #ffffff;
+  border-bottom: solid #434343 1px;
 }
 
 @media only screen and (min-width: 1024px) {
   header {
-    background-color: transparent;
+    background: transparent;
     height: auto;
   }
 }
@@ -134,8 +146,7 @@ header {
     align-items: center;
     -ms-flex-pack: center;
     justify-content: flex-end;
-    padding-left: 188px;
-    padding-right: 30px;
+    padding: 0 188px 0 30px;
   }
 }
 
@@ -161,17 +172,17 @@ header {
 @media only screen and (min-width: 1024px) {
   .topnav__item {
     font-size: 14px;
-    margin-left: 15px;
+    margin: 0 0 0 15px;
     text-align: left;
   }
   .topnav__item:first-child {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: 1680px) {
   .topnav__item {
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     font-size: 18px;
     line-height: 22px;
   }
@@ -183,14 +194,19 @@ header {
   white-space: nowrap;
 }
 
+.topnav__link:hover{
+  color: #d79e40;
+}
+
 @media only screen and (min-width: 1024px) {
   .topnav__link {
     color: #434343;
   }
 }
 
+/* About */
 .about__title {
-  margin-top: 80px !important;
+  margin: 80px 0 0 0 !important;
   text-transform: uppercase;
   font: bold 22px/1.45 "Montserrat", sans-serif;
   text-align: center;
@@ -199,7 +215,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .about__title {
-    margin-top: 120px;
+    margin: 120px 0 0;
     font-size: 32px;
   }
 }
@@ -208,7 +224,7 @@ header {
   .about__context {
     display: -ms-flexbox;
     display: flex;
-    margin-top: 40px;
+    margin: 40px 0 0;
   }
 }
 
@@ -224,29 +240,22 @@ header {
 .about__img {
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  margin: 40px 0 0;
 }
 @media only screen and (max-width: 1024px) {
   .about__img {
     max-width: 40%;
     padding: 0 35px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
   }
 }
 .about__text {
   font: 18px/1.56 "Montserrat", sans-serif;
   text-align: left;
   color: #434343;
-  margin-top: 30px;
+  margin: 30px 0 0;
   align-self: center;
-}
-
-.about__img {
-  width: 50%;
-  height: auto;
-  margin-top: 40px;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -265,8 +274,8 @@ header {
   text-decoration: none;
   color: #ffffff;
   border-radius: 5px;
-  background-color: #1f1f1f;
-  margin-top: 26px;
+  background: #1f1f1f;
+  margin: 26px 0 0;
   width: 30%;
   padding: 19px 0;
   border: none;
@@ -285,24 +294,11 @@ header {
 }
 
 .about__button--light {
-  background-color: #daa035;
+  background: #daa035;
 }
 
-.about__heading {
-  font: bold 22px/27px "Montserrat", sans-serif;
-  text-transform: uppercase;
-  color: #434343;
-}
-
-@media only screen and (min-width: 1024px) {
-  .about__heading {
-    font: bold 32px/150% "Montserrat", sans-serif;
-    margin-top: 50px;
-  }
-}
-
+/* Testimonials */
 .team__list {
-  margin-top: 37px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -338,34 +334,32 @@ header {
 .team__name {
   font: bold 16px/1.38 "Montserrat", sans-serif;
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .team__review {
   font: 16px/1.38 "Montserrat", sans-serif;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .team__position {
   font: 16px/1.38 "Montserrat", sans-serif;
   text-align: center;
   color: #434343;
-  margin-top: 10px;
+  margin: 10px 0 0;
 }
 
 .team__button {
   font: bold 16px/2 "Montserrat", sans-serif;
   text-align: center;
   color: #ffffff;
-  background-color: #1f1f1f;
+  background: #1f1f1f;
   text-decoration: none;
-  padding-top: 7px;
+  padding: 7px 0 0;
   height: 50px;
   border-radius: 5px;
   width: 30%;
   border: none;
-  margin-top: 14px;
+  margin: 14px 0 0;
   display: block;
 }
 
@@ -380,8 +374,10 @@ header {
   }
 }
 
+/* Article */
 .article__list {
-  margin-top: 3px;
+  margin: 3px 0 0 0;
+  display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -396,13 +392,12 @@ header {
 
 .article__item {
   margin-top: 36px;
+  width: 30%;
 }
 
 @media only screen and (min-width: 1024px) {
   .article__item {
     margin-top: 0;
-    -ms-flex: 1 0 33.333%;
-    flex: 1 0 33.333%;
     max-width: 33.333%;
     padding: 0 15px;
   }
@@ -417,9 +412,8 @@ header {
     width: 80%;
   }
 }
-
 .article__title {
-  margin-top: 29px;
+  margin: 29px 0 0;
   font: bold 20px/1.4 "Montserrat", sans-serif;
   text-align: left;
   color: #434343;
@@ -427,7 +421,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .article__title {
-    margin-top: 40px;
+    margin: 40px 0 0;
     font: bold 22px/1.27 "Montserrat", sans-serif;
   }
 }
@@ -437,7 +431,7 @@ header {
 }
 
 .article__text {
-  margin-top: 26px;
+  margin: 26px 0 0;
   font: 16px/1.63 "Montserrat", sans-serif;
 }
 
@@ -450,9 +444,9 @@ header {
 }
 
 .article__button {
-  margin-top: 36px;
+  margin: 36px auto 0;
   border-radius: 5px;
-  background-color: #1f1f1f;
+  background: #1f1f1f;
   text-decoration: none;
   padding: 7px 0;
   color: #ffffff;
@@ -461,31 +455,28 @@ header {
   width: 30%;
   display: block;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media only screen and (max-width: 1024px) {
   .article__button {
     max-width: 45%;
-    margin: 42px 0 0 30px;
+    margin: 42px auto 30px;
     font-size: 18px;
     line-height: 1.78;
     display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
+/* Video */
 .video__item {
   position: relative;
-  margin-top: 30px;
+  margin: 30px 0 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .video__item {
-    margin-top: 40px;
+    margin: 40px 0 0;
   }
 }
 
@@ -502,7 +493,7 @@ header {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: #d79e40 url(/images/bg/play.svg) no-repeat 50%/18px 18px;
+  background: #d79e40 url(../images/play.svg) no-repeat 50%/18px 18px;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -517,18 +508,17 @@ header {
     display: -ms-flexbox;
     display: flex;
     margin: 70px -15px 0;
+    justify-content: center;
   }
 }
 
 .video__item {
-  margin-top: 36px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 36px auto 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .video__item {
-    margin-top: 0;
+    margin: 0;
     -ms-flex: 1 0 33.333%;
     flex: 1 0 33.333%;
     max-width: 33.333%;
@@ -539,8 +529,7 @@ header {
 .video__img {
   display: block;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .video__play {
@@ -556,30 +545,15 @@ header {
   left: 50%;
   width: 72px;
   height: 72px;
-  background: #daa035 url(play.svg) no-repeat 50%/16px 16px;
+  background: #daa035 url(../images/play.svg) no-repeat 50%/16px 16px;
   transform: translate(-50%, -50%);
 }
-.box {
-  margin: 0 20px;
-  box-shadow: 0px 2px 5px 0 rgba(67, 67, 67, 0.11);
-  background-color: #ffffff;
-}
 
-.box__spacer {
-  margin-top: 100px;
-}
 
-.box__spacer:before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background: #d5dbe3;
-}
-
+/* Footer */
 .footer__bg {
-  margin-top: 70px;
-  background-color: #ff6b25;
+  margin: 70px 0 0;
+  background: #ff6b25;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -595,27 +569,24 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .footer__column {
-    padding-left: 180px;
+    padding: 0 0 0 180px;
   }
 }
 
 .footer__logo {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .footer__logo {
-    padding-top: 69px;
-    padding-bottom: 8px;
+    padding: 69px 0 8px 0;
   }
 }
 .footer__title {
   font: bold 22px/1.45 "Montserrat", sans-serif;
   text-align: left;
   color: #ffffff;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 60px 0 40px 0;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -623,13 +594,12 @@ header {
     font: bold 22px/1.45 "Montserrat", sans-serif;
     text-align: left;
     color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding: 60px 0 40px 0;
   }
 }
 
 .footer__text {
-  margin-top: 30px;
+  margin: 30px 0 0;
   font: 16px/1.63 "Montserrat", sans-serif;
   text-align: left;
   color: #ffffff;
@@ -650,14 +620,14 @@ header {
 }
 
 .footer__icons {
-  margin-top: 25px;
+  margin: 25px 0 0;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
   .footer__icons {
-    margin-top: 36px;
+    margin: 36px 0 0;
   }
 }
 
@@ -665,7 +635,7 @@ header {
   -ms-flex: 1 0 40px;
   flex: 1 0 40px;
   border-radius: 20px;
-  margin-left: 15px;
+  margin: 0 0 0 15px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -678,7 +648,7 @@ header {
 }
 
 .footer__icon:first-child {
-  margin-left: 0;
+  margin: 0;
 }
 
 .footer__icon img {
@@ -699,7 +669,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .footer__ico {
-    margin-top: 27px;
+    margin: 27px 0 0;
   }
 }
 
@@ -711,7 +681,7 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .footer__contact {
-    padding-top: 30px;
+    padding: 30px 0 10px 39px;
   }
 }
 
@@ -720,7 +690,7 @@ header {
   text-align: center;
   color: #ffffff;
   border-radius: 5px;
-  background-color: #1f1f1f;
+  background: #1f1f1f;
   border: none;
   margin: 36px 0 60px;
   padding: 10px 0;
@@ -731,10 +701,9 @@ header {
 
 @media only screen and (min-width: 1024px) {
   .footer__button {
-    margin-left: 0;
+    margin: 26px 0 60px;
     display: block;
     width: 200px;
-    margin-top: 26px;
   }
 }
 
@@ -744,14 +713,14 @@ header {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 60px;
+  margin: 60px 0 0;
   padding: 0;
 }
 
 @media only screen and (min-width: 1024px) {
   .footer-nav__list {
     display: block;
-    margin-top: 69px;
+    margin: 69px 0 0;
   }
 }
 
