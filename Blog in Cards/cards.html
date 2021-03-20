@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/cube logo.png" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,6 +16,11 @@
       crossorigin="anonymous">
     </script>
     <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -24,33 +29,33 @@
     <div class="border-bottom">
       <ul class="nav justify-content-center">
         <li>
-          <img class="logo" src="images/vvv.png" alt="Company logo" />
+          <a href="#"><img class="logo" src="images/cube logo.png" alt="Company logo" /></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" aria-current="page" href="#"><small>World</small></a>
+          <a class="nav-link text-dark nav__link" aria-current="page" href="#">World</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Sports</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Sports</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Opinion</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Opinion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Culture</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Culture</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Fashion</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Fashion</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Tech</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Tech</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#"><small>Lifestyle</small></a>
+          <a class="nav-link active nav__link" href="#">Lifestyle</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark" href="#"><small>Business</small></a>
+          <a class="nav-link text-dark nav__link" href="#">Business</a>
         </li>
-        <li><img class="logo" src="images/flutter-circleavatar-radius.png" alt="User avatar"/></li>
+        <li><a href="#"><img class="logo" src="images/avatar.png" alt="User avatar"/></li></a>
         <li>
             <input type="text" class="rounded input-size border-dark form-control form-control-sm" placeholder="Search">
         </li>
@@ -60,15 +65,16 @@
 
   <!-- main starts -->
     <div class="container">
-      <h2 class="title"><strong>Lifestyle</strong></h2>
+      <h2 class="title">Lifestyle</h2>
       <p class="text-secondary">The latest and best news selected by our editorial office especially for you.</p>
 
+      <div class="cards__container">
       <div class="row row-cols-3">
         <div class="col-6">
           <div class="card card_wide text-white h-100">
             <img srcset="images/1andrej-lisakov-1Bg9Wlq3wXk-unsplash.jpg 1x, images/2andrej-lisakov-1Bg9Wlq3wXk-unsplash.jpg 2x" class="card-img rounded shadow h-100" alt="Wooden panels bg image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong> Best Flooring Options for Your Home on a Budget</strong></h2>
+              <h2 class="card-title">Best Flooring Options for Your Home on a Budget</h2>
               <p class="card-text">
                 Before you get started on your flooring project, it pays to do a little research on the different kinds
                 of flooring and learn about their costs and benefits. Then, you can find a floor that fits both your
@@ -83,7 +89,7 @@
           <div class="card card_slim text-white h-100">
             <img srcset="images/1deborah-diem-4dWz9H7d8OM-unsplash.jpg 1x, images/2deborah-diem-4dWz9H7d8OM-unsplash.jpg 2x"  class="card-img-top rounded shadow h-100" alt="Coffee background image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong>6 Best Benefits of Adding Honey In Coffee</strong></h2>
+              <h2 class="card-title">6 Best Benefits of Adding Honey In Coffee</h2>
               <p class="card-text">
                 Here are just some of the benefits of honey when added to your daily cup of coffee.
               </p>
@@ -96,7 +102,7 @@
           <div class="card card_slim text-white h-100" style="width: 17rem">
             <img  srcset="images/1annie-spratt-F2osbUaY9kI-unsplash.jpg 1x, images/2annie-spratt-F2osbUaY9kI-unsplash.jpg 2x" class="card-img-top rounded shadow h-100" alt="Autumn leaves bg image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong>Fall Jazz Playlist </strong></h2>
+              <h2 class="card-title">Fall Jazz Playlist </h2>
               <p class="card-text">
                 If you're creating a jazz playlist for taking walks through autumn leaves, here are suggestions for you.
               </p>
@@ -111,7 +117,7 @@
           <div class="card card_slim text-white h-100" style="width: 17rem">
             <img  srcset="images/1jessica-delp-smNzhFQRktg-unsplash.jpg 1x, images/2jessica-delp-smNzhFQRktg-unsplash.jpg 2x" class="card-img-top rounded shadow h-100" alt="Lit candle bg image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong>10 Scented Candles for Christmas</strong></h2>
+              <h2 class="card-title">10 Scented Candles for Christmas</h2>
               <p class="card-text">Festive treats for you and your home.</p>
               <a href="#" class="btn btn-light btn-outline-dark mt-auto">Read for free</a>
             </div>
@@ -122,7 +128,7 @@
           <div class="card card_slim text-white h-100" style="width: 17rem">
             <img  srcset="images/1justin-luebke-ahRErl1zyaQ-unsplash.jpg 1x, images/2justin-luebke-ahRErl1zyaQ-unsplash.jpg 2x" class="card-img-top rounded shadow h-100" alt="Cat outside the door bg image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong>About Walking Your Cat</strong></h2>
+              <h2 class="card-title">About Walking Your Cat</h2>
               <p class="card-text">Should we do it?</p>
               <a href="#" class="btn btn-light btn-outline-dark mt-auto">Read for $0.99</a>
             </div>
@@ -133,7 +139,7 @@
           <div class="card card_wide text-white h-100">
             <img  srcset="images/1andrew-neel-1-29wyvvLJA-unsplash.jpg 1x, images/2andrew-neel-1-29wyvvLJA-unsplash.jpg 2x" class="card-img rounded shadow h-100" alt="Maps bg image" />
             <div class="card-img-overlay d-flex align-items-start flex-column">
-              <h2 class="card-title"><strong>Traveling on Quarantine</strong></h2>
+              <h2 class="card-title">Traveling on Quarantine</h2>
               <p class="card-text">
                 If you are considering traveling, here are some important questions to ask yourself and your loved ones
                 beforehand. These questions can help you decide what is best for you and your family.
@@ -143,6 +149,8 @@
           </div>
         </div>
       </div>
+    </div>
+      <button type="button" class="btn btn-primary main__load_btn"> <i class="fas fa-redo-alt"></i> Load more</button>
     </div>
     <!-- main ends -->
 
@@ -174,19 +182,19 @@
         <div class="col-3 mt-4">
                 <ul class="list-unstyled">
                   <li>
-                    <a href="#!"><small>About Us</small></a>
+                    <a href="#!">About Us</a>
                   </li>
                   <li>
-                    <a href="#!"><small>Jobs</small></a>
+                    <a href="#!">Jobs</a>
                   </li>
                   <li>
-                    <a href="#!"><small>Copyright Policy</small></a>
+                    <a href="#!">Copyright Policy</a>
                   </li>
                   <li>
-                    <a href="#!"><small>Privacy Policy</small></a>
+                    <a href="#!">Privacy Policy</a>
                   </li>
                   <li>
-                    <a href="#!"><small>Contact Us</small></a>
+                    <a href="#!">Contact Us</a>
                   </li>
                 </ul>
             </div>
@@ -198,5 +206,6 @@
     </footer>
     <!-- footer ends -->
 
+    <script src="js/all.js"></script>
   </body>
 </html>
