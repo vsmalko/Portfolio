@@ -4,11 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deciphering Different Types of Coffee with Milk</title>
-    <link rel="stylesheet" href="all.css">
+    <link rel="icon" type="image/png" href="images/Black Coffee.png" />
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   </head>
+
   <body>
+    <!-- header starts -->
     <div class="navbar-fixed" aria-label=’primary’>
     <nav>
       <div class="nav-wrapper blue-grey darken-1">
@@ -25,8 +28,8 @@
                   </div>
           </li>
         </ul>
-        <div class="image">
-        <img href="#" class="sized" src="White Coffee.png" alt="" />
+        <div class="header__logo">
+        <a href="#"><img class="header__logo__img" src="images/White Coffee.png" alt="White coffee beans logo" /></a>
       </div>
       </div>
  
@@ -42,18 +45,22 @@
     </ul>
 </nav>
   </div>
+<!-- header ends -->
 
-    <h3 class="center">Deciphering Different Types of Coffee with Milk</h3>
-    <h5 class="center subhead">A Guide to Milked Coffee Drinks</h5>
-    <p class="center grey-text">Written by Sarah Johnson on 09/28/20</p>
+<!-- main starts -->
+<section>
+    <h3 class="center main__h1">Deciphering Different Types of Coffee with Milk</h3>
+    <h5 class="center main__h2">A Guide to Milked Coffee Drinks</h5>
+    <p class="center grey-text main__h3">Written by Sarah Johnson on 09/28/20</p>
     <div class="carousel carousel-slider center">
-      <a class="carousel-item" href="#one!"><img class="img-responsive" src="02CAPP3SUB-superJumbo.jpg" /></a>
-      <a class="carousel-item" href="#two!"><img class="img-responsive" src="Iced-Latte1.jpg" /></a>
-      <a class="carousel-item" href="#three!"><img class="img-responsive" src="Frappe.jpeg" /></a>
-      <a class="carousel-item" href="#four!"><img class="img-responsive" src="starbucks-flat-white.jpg" /></a>
+      <a class="carousel-item" href="#one!"><img class="img-responsive center_fix" src="images/02CAPP3SUB-superJumbo.jpg" alt="Cappuccino" /></a>
+      <a class="carousel-item" href="#two!"><img class="img-responsive center_fix" src="images/Iced-Latte1.jpg" alt="Iced Latte"/></a>
+      <a class="carousel-item" href="#three!"><img class="img-responsive center_fix" src="images/Frappe.jpeg" alt="Frappe"/></a>
+      <a class="carousel-item" href="#four!"><img class="img-responsive center_fix" src="images/starbucks-flat-white.jpg" alt="Flat white"/></a>
     </div>
-    <div class="container">
-      <h5>Cappuccino</h5>
+
+    <article class="container main">
+      <h5 class="main__h4">Cappuccino</h5>
       <p>
         A traditional Italian cappuccino is a single espresso shot topped with equal parts steamed and frothed milk (in
         a ratio of one-to-one-to-one). It is served in a four-to-six-ounce preheated bowl-shaped cup.
@@ -63,7 +70,7 @@
         the espresso quantities the same unless otherwise specified. The foam that tops a cappuccino acts as a natural
         insulator, keeping the drink warmer longer.
       </p>
-      <h5>Caffé Latte</h5>
+      <h5 class="main__h4">Caffé Latte</h5>
       <p>
         Caffé latte recipes vary widely. A general definition of this popular drink is a double espresso in the base of
         a preheated mug or cup, topped with steamed milk to fill and garnished with froth or latte art.
@@ -74,7 +81,7 @@
         is that they will be served with espresso, steamed milk and around 1cm of milk froth will settle on top. It can
         also be served iced.
       </p>
-      <h5>Frappe</h5>
+      <h5 class="main__h4">Frappe</h5>
       <p>
         A frappe is served cold, often with whipped cream and toppings. You can add ice before or after beating the
         coffee and custom additives such as sugar, milk, vanilla, and sweet sauces. An ice-crushing blender is better
@@ -84,7 +91,7 @@
         Frappés are among the most popular forms of coffee in Greece and Cyprus and have become a hallmark of postwar,
         outdoor, Greek, coffee culture.
       </p>
-      <h5>Flat White</h5>
+      <h5 class="main__h4">Flat White</h5>
       <p>
         Flat white is a shot of espresso with a double shot of steamed milk. The aim of a flat white is generally to
         serve an espresso based drink, with un-texturised milk. This is milk that has not had air incorporated into it
@@ -93,15 +100,20 @@
       <p>
         Unlike most steamed milk coffee drinks, it is "wet," so it has little or no foam and a smooth, velvety texture.
       </p>
-      <h6 class="readnext">Read Next: <a href="#">The 10 Best Espresso Machines of 2020</a></h6>
-    </div>
+      <h6 class="main__readnext">Read Next: <a href="#">The 10 Best Espresso Machines of 2020</a></h6>
+    </article>
+  </section>
+<!-- main ends -->
 
-    <div class="fixed-action-btn" onclick="topFunction()" id="myBtn">
+<!-- action button starts -->
+    <div class="fixed-action-btn" id="myBtn">
       <a class="btn-floating btn-large blue-grey">
         <i class="large material-icons">arrow_upward</i>
       </a>
     </div>
+    <!-- action button ends -->
 
+  <!-- footer starts -->
     <footer class="page-footer pagefooter">
       <div class="container">
         <div class="row">
@@ -112,10 +124,10 @@
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Links</h5>
             <ul>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook"></i> Facebook</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter"></i> Twitter</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i> Instagram</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-youtube"></i> YouTube</a></li>
+              <li class="footer__social__item"><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook"></i> Facebook</a></li>
+              <li class="footer__social__item"><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter"></i> Twitter</a></li>
+              <li class="footer__social__item"><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i> Instagram</a></li>
+              <li class="footer__social__item"><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-youtube"></i> YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -126,11 +138,14 @@
         </div>
       </div>
     </footer>
+  <!-- footer ends -->
 
+  <!-- scripts start -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="all.js"></script>
+    <script src="js/all.js"></script>
+<!-- scripts end -->
 
   </body>
 </html>
