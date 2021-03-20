@@ -1,3 +1,4 @@
+//Carousel
 document.addEventListener("DOMContentLoaded", function () {
   let elems = document.querySelectorAll(".carousel");
   let instance = M.Carousel.init(elems, {
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     duration: 100,
   });
 });
+
 document.addEventListener("DOMContentLoaded", function () {
   let elemes = document.querySelectorAll(".dropdown-trigger");
   let instances = M.Dropdown.init(elemes, {
@@ -13,10 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     hover: true,
   });
 });
-let mybutton = document.getElementsByClassName("myBtn");
-window.onscroll = function () {
-  scrollFunction();
-};
+
+
+// Action btn events
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     myBtn.style.display = "block";
@@ -24,7 +25,15 @@ function scrollFunction() {
     myBtn.style.display = "none";
   }
 }
+
 function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({top: 0, behavior: 'smooth'});
 }
+
+let btn = document.querySelector('#myBtn')
+btn.addEventListener("click", () =>{
+topFunction()
+})
+window.onscroll = function () {
+  scrollFunction();
+};
