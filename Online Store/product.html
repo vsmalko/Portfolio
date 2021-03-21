@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Product page</title>
+    <link rel="icon" type="image/png" href="images/ad.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,24 +27,30 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <body>
-    <div class="header bg-light d-flex">
-      <div class="mr-auto p-2 ml-4"><img src="ad.png" style="height: 80px" /> AD'S BOARD</div>
+<!-- header starts -->
+    <header class="header bg-light d-flex">
+      <div class="mr-auto p-2 ml-4"><a href="home.html"><img src="images/ad.png" alt="Ad board logo" class="logo"></a>
+      AD BOARD</div>
       <div class="p-2">
         <button type="button" class="bg-warning border-0 rounded pt-2 pb-0 pl-3 pr-4">
           <p><b>+</b>New ad</p>
         </button>
       </div>
       <div class="p-2 mr-4">
-        <img src="av_64.png" />
+      <a href="#"><img src="images/av_64.png" alt="User's avatar"></a>
         <a href="#">My Profile</a>
       </div>
-    </div>
-    <br />
-    <div class="d-flex">
-      <div class="d-flex flex-column border rounded mr-4 ml-4" style="width: 70%">
-        <img src="furniture_1.png" alt="" class="align-self-center" />
+    </header>
+    <!-- header ends -->
+
+    <!-- main starts -->
+    <section class="d-flex main">
+      <div class="d-flex flex-column border rounded mr-4 ml-4 product_desc">
+        <img src="images/furniture_1.png" alt="Furniture picture" class="align-self-center" />
         <h4 class="ml-4">Italian wooden wardrobe</h4>
         <div class="p-2 mb-3 ml-4 text-secondary">
           <i class="fas fa-map-marker-alt mr-2 ml-0"></i> Kyiv, Pecherskiy <i class="fas fa-clock mr-2 ml-4"></i> Today
@@ -67,60 +73,92 @@
           commodi molestiae!
         </p>
         <div class="d-flex flex-row justify-content-around">
-          <img src="furniture_4.png" alt="" />
-          <img src="furniture_4.png" alt="" />
-          <img src="furniture_4.png" alt="" />
-          <img src="furniture_4.png" alt="" />
-          <img src="furniture_4.png" alt="" />
+          <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" /></a>
+          <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" /></a>
+          <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" /></a>
+          <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" /></a>
+          <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" /></a>
         </div>
-        <div class="bg-light text-secondary pl-4 pt-3" style="height: 50px">Views: 125</div>
+        <div class="bg-light text-secondary pl-4 pt-3 product_stats">Views: 125</div>
       </div>
-      <br />
-      <div class="d-flex flex-column mr-4" style="width: 25%">
+   
+      <div class="d-flex flex-column mr-4 sidebar">
         <div class="d-flex justify-content-center border rounded mb-3 pt-2 pb-1">
-          <h2 class="">$120</h2>
+          <h2>$120</h2>
         </div>
         <button type="button" class="bg-info text-white rounded border-0 p-2 mb-2">
           <i class="fas fa-envelope"></i> Write to seller
         </button>
         <button type="button" class="bg-info text-white rounded border-0 p-2">+ 38(068) 123-45-67</button>
-        <br />
-        <div class="bg-light align-items-center d-flex flex-column">
-          <img src="account.png" alt="" style="height: 90px; width: 90px" />
+      
+        <div class="bg-light align-items-center d-flex flex-column seller">
+          <a href="#"><img src="images/account.png" alt="Seller's avatar" class="sidebar__avatar"/></a>
           <h4>Name</h4>
-          <p>on AD'S BOARD since October 2020</p>
+          <p>on AD BOARD since October 2020</p>
           <button type="button" class="rounded border border-info text-info bg-light w-75 mb-3">
             Seller's other ads
           </button>
         </div>
-        <br />
-        <p class="text-danger">Complain</p>
+        <a href="#" class="text-danger mt-4">Complain</a>
       </div>
-    </div>
+    </section>
     <hr />
-    <div class="footer d-flex justify-content-around">
-      <img src="ad_bw.png" class="picture" />
+    <!-- main ends -->
+
+    <!-- footer starts -->
+    <footer class="footer d-flex justify-content-around">
+    <a href="home.html"><img src="images/ad.png" alt="Ad board logo" class="align-self-center mb-2 logo logo--animate"></a>
       <ul class="text-primary">
-        <li>Mobile applications</li>
-        <li>Paid services</li>
-        <li>Advertising on the website</li>
-        <li>For the press</li>
-        <li>Help and Feedback</li>
+        <a href="category.html">
+          <li>Mobile applications</li>
+        </a>
+        <a href="category.html">
+          <li>Paid services</li>
+        </a>
+        <a href="category.html">
+          <li>Advertising on the website</li>
+        </a>
+        <a href="category.html">
+          <li>For the press</li>
+        </a>
+        <a href="category.html">
+          <li>Help and Feedback</li>
+        </a>
       </ul>
       <ul class="text-primary">
-        <li>AD'S BOARD blog</li>
-        <li>Safety regulations</li>
-        <li>How to sell and buy?</li>
-        <li>Terms of Use</li>
-        <li>Partners</li>
+        <a href="#">
+          <li>AD BOARD blog</li>
+        </a>
+        <a href="#">
+          <li>Safety regulations</li>
+        </a>
+        <a href="#">
+          <li>How to sell and buy?</li>
+        </a>
+        <a href="#">
+          <li>Terms of Use</li>
+        </a>
+        <a href="#">
+          <li>Partners</li>
+        </a>
       </ul>
       <ul class="text-primary">
-        <li>Work at AD'S BOARD</li>
-        <li>Popular Searches</li>
-        <li>Map of Regions</li>
-        <li>Advertising preferences</li>
-        <li>Site Map</li>
+        <a href="#">
+          <li>Work at AD BOARD</li>
+        </a>
+        <a href="#">
+          <li>Popular Searches</li>
+        </a>
+        <a href="#">
+          <li>Map of Regions</li>
+        </a>
+        <a href="#">
+          <li>Advertising preferences</li>
+        </a>
+        <a href="#">
+          <li>Site Map</li>
       </ul>
-    </div>
+    </footer>
+      <!-- footer ends -->
   </body>
 </html>
