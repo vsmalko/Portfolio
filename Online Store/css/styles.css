@@ -1,12 +1,68 @@
-.grey {
-  background-color: gainsboro;
-}
-li {
+/* General */
+li{
   list-style-type: none;
+}
+b {
+  font-size: 24px;
 }
 .lists {
   margin: 20px;
 }
-b {
-  font-size: 24px;
+.logo{
+  height: 80px;
+}
+
+/* Inputs */
+.input__container{
+  height: 70px;
+    width: 90%;
+    margin: 24px 0 0 60px;
+    background-color: gainsboro;
+}
+.input{
+  height: 40px;
+    width: 40%;
+}
+.input__small{
+  height: 40px;
+    width: 30%;
+}
+
+/* Product page */
+.main{
+  margin: 24px 0 0;
+}
+.products__container{
+  width: 90%; 
+  margin: 24px 0 0 60px;
+  padding: 0 auto auto;
+}
+.products__item{
+height: 200px;
+}
+.sidebar{
+  width: 25%;
+  margin: 24px 0 0; 
+}
+.product_desc{
+width: 70%
+}
+.product_stats{
+height: 50px;
+}
+.sidebar__avatar{
+  height: 90px;
+  width: 90px
+}
+
+.seller{
+  margin: 24px 0 0;
+}
+
+/* Footer */
+.logo--animate{
+ filter: grayscale(1);
+}
+.logo--animate:hover{
+filter: grayscale(0);
 }
