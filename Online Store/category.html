@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category page</title>
+    <link rel="icon" type="image/png" href="images/ad.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/86b430232a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- header starts -->
+    <header class="header bg-light d-flex">
+        <div class="mr-auto p-2 ml-4"> <a href="home.html"><img src="images/ad.png" alt="Ad board logo" class="logo"></a>
+            AD BOARD</div>
+            <div class="p-2">
+                <button type="button" class="bg-warning border-0 rounded pt-2 pb-0 pl-3 pr-4">
+                    <p><b>+</b>New ad</p>
+                </button>
+            </div>
+            <div class="p-2 mr-4">
+            <a href="#"><img src="images/av_64.png" alt="User's avatar"></a>
+            <a href="#">My Profile</a>
+        </div>
+    </header>
+<!-- header ends -->
+
+<!-- search starts -->
+    <div class="d-flex justify-content-around rounded input__container">
+        <div class="bg-light rounded border d-flex align-self-center input__small">
+            <i class="fas fa-search align-self-center mr-4 ml-2"></i>
+            <input type="text" class="rounded border h-100 w-100 pl-3" placeholder="Wardrobe">
+        </div>
+         <div class="bg-light rounded border d-flex align-self-center input__small">
+            <i class="fas fa-map-marker-alt align-self-center mr-4 ml-2"></i>
+            <input type="text" class="rounded border h-100 w-100 pl-3" placeholder="Kyiv, Pecherskiy">
+        </div>
+        <div class="bg-light rounded border d-flex align-self-center input__small">
+           <button class="btn dropdown-toggle rounded border h-100 w-100 pl-3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-couch align-self-center mr-4 ml-2"></i>House & Garden</button>
+           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-baby mr-3"></i> Children's world</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-id-badge mr-3"></i> Jobs</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-wrench mr-3"></i> Business & services</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-sync-alt mr-3"></i> Exchange</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-home mr-3"></i> Property</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-paw mr-3"></i> Animals</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-tshirt mr-3"></i> Fashion & style</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-car mr-3"></i> Transport</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-couch mr-3"></i> House & garden</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-cogs mr-2"></i> Spare parts for cars</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-mobile-alt mr-3"></i> Phones, Tablets & PCs</a>
+            <a class="dropdown-item text-dark" href="category.html"><i class="fas fa-gift mr-2"></i> Gifts</a></a>
+          </div>
+        </div>
+    </div>
+    <!-- search ends -->
+    
+    <!-- products list starts -->
+<section class="d-flex flex-column">
+    <div class="d-flex rounded border border-secondary products__container">
+        <a href="product.html"><img src="images/furniture_4.png" alt="Furniture picture" class="products__item"></a>
+        <div class="d-flex align-items-start flex-column">
+            <a href="product.html"><h4 class="text-primary mb-auto p-2 mt-2">Italian wooden wardrobe</h4></a>
+            <div class="p-2 mb-3 text-secondary">
+                <i class="fas fa-map-marker-alt mr-2 ml-0"></i> Kyiv, Pecherskiy
+                <i class="fas fa-clock mr-2 ml-4"></i> Today at 10:45
+            </div>
+        </div>
+        <h2 class="ml-auto mr-4 p-2 mt-2">120$</h2>
+    </div>
+  
+    <div class="d-flex rounded border border-secondary products__container">
+        <a href="product.html"><img src="images/furniture_3.png" alt="Furniture picture" class="products__item"></a>
+        <div class="d-flex align-items-start flex-column">
+            <a href="product.html"><h4 class="text-primary mb-auto p-2 mt-2">Sell used wardrobe</h4></a>
+            <div class="p-2 mb-3 text-secondary">
+                <i class="fas fa-map-marker-alt mr-2 ml-2"></i> Kyiv, Pecherskiy
+                <i class="fas fa-clock mr-2 ml-4"></i> Today at 9:34
+            </div>
+        </div>
+        <h2 class="ml-auto mr-4 p-2 mt-2">50$</h2>
+    </div>
+
+    <div class="d-flex rounded border border-secondary products__container">
+        <a href="product.html"><img src="images/furniture_2.png" alt="Furniture picture" class="products__item"></a>
+        <div class="d-flex align-items-start flex-column">
+            <a href="product.html"><h4 class="text-primary mb-auto p-2 mt-2">Wardrobe Helga from Germany</h4></a>
+            <div class="p-2 mb-3 text-secondary">
+                <i class="fas fa-map-marker-alt mr-2 ml-2"></i> Kyiv, Pecherskiy
+                <i class="fas fa-clock mr-2 ml-4"></i> Today at 0:23
+            </div>
+        </div>
+        <h2 class="ml-auto mr-4 p-2 mt-2">70$</h2>
+    </div>
+</section>
+<!-- products list ends -->
+    <hr>
+    <!-- footer starts -->
+    <footer class="footer d-flex justify-content-around  mb-2">
+        <a href="home.html"><img src="images/ad.png" alt="Ad board logo" class="align-self-center mb-2 logo logo--animate"></a>
+        <ul class="text-primary">
+            <a href="category.html"><li>Mobile applications</li></a>
+            <a href="category.html"><li>Paid services</li></a>
+            <a href="category.html"><li>Advertising on the website</li></a>
+            <a href="category.html"><li>For the press</li></a>
+            <a href="category.html"><li>Help and Feedback</li></a>
+        </ul>
+        <ul class="text-primary">
+            <a href="#"><li>AD BOARD blog</li></a>
+           <a href="#"><li>Safety regulations</li></a>
+            <a href="#"><li>How to sell and buy?</li></a>
+            <a href="#"><li>Terms of Use</li></a>
+            <a href="#"><li>Partners</li></a>
+        </ul>
+        <ul class="text-primary">
+            <a href="#"><li>Work at AD BOARD</li></a>
+            <a href="#"><li>Popular Searches</li></a>
+            <a href="#"><li>Map of Regions</li></a>
+            <a href="#"><li>Advertising preferences</li></a>
+            <a href="#"><li>Site Map</li>
+        </ul>
+    </footer>
+    <!-- footer ends -->
+</body>
+</html>
